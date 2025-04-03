@@ -11,8 +11,7 @@ public class Main {
         imprimirMatriz(matriz1);
         imprimirMatriz(matriz2);
         int[][] suma = sumarMatriz(matriz1, matriz2);
-
-
+        imprimirMatriz(suma);
 
     }
 
