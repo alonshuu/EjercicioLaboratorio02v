@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c09e5c8-c066-4292-9100-f121d1284cbe" name="Changes" comment="agregado la opcion de sumar matrices.">
+    <list default="true" id="9c09e5c8-c066-4292-9100-f121d1284cbe" name="Changes" comment="agregada la suma">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,13 +102,22 @@
       <option name="project" value="LOCAL" />
       <updated>1743686320413</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="agregada la suma">
+      <option name="closed" value="true" />
+      <created>1743686571772</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743686571772</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-- creado menu y readme --" />
     <MESSAGE value="operaciones de creaciones de matrices, y print matriz para ver que los valores se ingresan correctamente." />
     <MESSAGE value="agregado la opcion de sumar matrices." />
-    <option name="LAST_COMMIT_MESSAGE" value="agregado la opcion de sumar matrices." />
+    <MESSAGE value="agregada la suma" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregada la suma" />
   </component>
 </project>

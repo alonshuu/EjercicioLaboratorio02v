@@ -47,10 +47,11 @@ public class Main {
     }
 
     public static void imprimirMatriz(int m[][]){
+        System.out.println("PRINTEANDO LA MATRIZ:");
         for (int i=0; i<m.length;i++){
             for (int j=0;j<m.length;j++){
-                System.out.println(m[i][j]);
-            }
+                System.out.print(m[i][j] + " ");
+            } System.out.println("");
         }
     }
 
@@ -66,6 +67,61 @@ public class Main {
         }
         return m;
     }
+
+    public static int[][] restarMatriz(int[][] A, int[][] B){
+        int[][] m = new int[2][2];
+        for (int i=0; i<m.length;i++){
+            for (int j=0; j< m.length;j++){
+                m[i][j] = A[i][j] + B[i][j];
+            }
+        }
+
+        return m;
+    }
+
+    public static int[][] multiplicarMatriz(int[][] A, int[][] B){
+        int[][] m = new int[2][2];
+        for (int i=0; i< m.length;i++){
+            for (int j=0; j<m.length;i++){
+                m[i][j] = 0;
+                for (int k=0; k<m.length;k++){
+                    m[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+        return m;
+    }
+
+    public static int calcularDeterminante(int[][] A){
+        int determinante = (A[0][0] * A[1][1]) - (A[0][1] - A[1][0]);
+        return determinante;
+    }
+
+
+    public static boolean determinarLineal(int determinante){
+        if (determinante != 0){
+            return true;
+        } else return false;
+
+    }
+
+    public static int[][] calcularInversa(int[][] A){
+        int verificador = calcularDeterminante(A);
+        if (determinarLineal(verificador)) {
+            int[][] inversa = new int[2][2];
+            inversa[0][0] = A[1][1] / verificador;
+            inversa[0][1] = -A[0][1] / verificador;
+            inversa[1][0] = -A[1][0] / verificador;
+            inversa[1][1] = A[0][0] / verificador;
+            return inversa;
+        } else {
+            return null;
+        }
+    }
+
+
+
+
 
 
 
