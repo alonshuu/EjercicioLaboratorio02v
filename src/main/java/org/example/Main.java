@@ -6,8 +6,13 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int[][] matriz = crearMatriz();
-        imprimirMatriz(matriz);
+        int[][] matriz1 = crearMatriz();
+        int[][] matriz2 = crearMatriz();
+        imprimirMatriz(matriz1);
+        imprimirMatriz(matriz2);
+        int[][] suma = sumarMatriz(matriz1, matriz2);
+
+
 
     }
 
@@ -51,8 +56,17 @@ public class Main {
     }
 
     // FIN DE Metodos de creacion de matrices y validacion
-
     // INICIO DE OPERACIONES ARITMETICAS
+
+    public static int[][] sumarMatriz(int[][] A, int[][] B){
+        int[][] m = new int[2][2];
+        for (int i =0; i<m.length;i++){
+            for (int j=0; j< m.length;j++){
+                m[i][j] = A[i][j] + B[i][j];
+            }
+        }
+        return m;
+    }
 
 
 
